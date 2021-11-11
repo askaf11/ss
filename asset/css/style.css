@@ -1,0 +1,318 @@
+/*
+-----------------Frame work----------------
+*/
+
+body{
+    user-select: none;
+   margin: 0px;
+   padding: 0px;
+   background: #f2f2f2;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+figure > a :hover{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.material-icons.md-18 { font-size: 35px; 
+color: #ffffff;
+}
+.material-icons.md-18.active{
+  color: #999999;  
+}
+.material-icons.md-18.backbtn {
+font-size: 40px;
+  color: #000000;  
+margin: 10px;
+}
+
+header{
+    background:  #003366;
+    color: white;
+    padding: 10px;
+text-align: center;
+
+
+}
+
+
+
+#header{
+text-decoration: none;
+font-weight: normal;
+font-size: 30px;
+color: white;
+
+
+}
+#header > span{
+    font-size: 15px;
+}
+
+#nav{
+display: block;
+text-decoration: none;
+color: white;
+text-align: right;
+font-size: 15px;
+padding: 10px;
+}
+
+#nav > a{
+    
+padding: 20px;
+color: white;
+
+}
+
+.headbar{
+    position: sticky;
+    top: 0;
+    background:#003366;
+    color: white;
+}
+
+.logo > img {
+    border: 1px solid #000000;
+    border-radius: 25px;
+width: 35px;
+height: 35px;
+
+
+}
+
+.subhead{
+   display: grid;
+   grid-template-columns: 20% 60%;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    text-align: center;
+}
+h3> span{
+    font-size: 10px;
+}
+
+figure{
+
+/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+background: #cce6ff;
+text-align: center;
+margin:20px;
+padding: 10px;
+border-radius:5px;
+width: 150px;
+height: 150px;
+border: 1px solid #003366;
+}
+
+.box{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.infobox{
+display:grid; 
+grid-template-columns:50% 50%;
+}
+
+
+
+
+
+/*
+
+-----------------style---------------------
+
+*/
+ img{
+width: 100px;
+
+}
+
+.reg {
+    text-align: left;
+background:#cce6ff ;
+padding: 20px;
+margin: 20px;
+border-left: 5px solid #003366;
+text-align: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+hr{
+    margin: 20px;
+    border: 1px solid black;
+}
+.reg > p{
+    text-align: left;
+    font-size: 15px;
+}
+.regbtn{
+    padding: 8px ;
+    background:#003366;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about{
+    margin: 20px;
+    border-top: 2px solid #003366;
+}
+#profile{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+
+}
+.profile{
+background:#cce6ff ;
+padding: 10px;
+text-align: center;
+ width: 20%;
+ margin: 10px;
+}
+
+.profile > img{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.profile > a{
+background:#003366 ;
+color: white;
+padding: 5px 10px;
+border-radius: 25px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbtn{
+display: none;
+}
+
+.backendfooter{
+    width: 100%;
+    height: 60px;
+}
+footer{
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+footer > a{
+    border: 1px solid #ffffff ;
+    border-radius: 5px;
+    padding: 5px;
+color:#ffffff;
+}
+/*
+-------------------------------------------------------------------
+-----------------------------frame-Mobile--------------------------
+*/
+
+@media screen and (max-width: 600px){
+
+/*--frame work--*/
+
+body{
+    margin-right: 0px;
+    margin-left:0px ;
+}
+
+
+#header{
+    font-size: 20px;
+}
+
+.logo > img {
+    width: 30px;
+    height: 30px;  
+}
+#nav{
+display: none;
+
+}
+
+.box{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+
+
+figure{
+background: #cce6ff;
+text-align: center;
+margin: 1px;
+padding: 10px;
+border-radius:5px;
+width: 80px;
+height: 90px;
+}
+
+figcaption{
+  font-size: 12px;
+
+}
+
+
+
+/*---style---*/
+
+.profile{
+background:#cce6ff ;
+padding: 10px;
+text-align: center;
+ width: 130px;
+ margin: 10px;
+}
+
+.infobox{
+   grid: unset;
+}
+
+
+.navbtn{
+    display: block;
+    position: fixed;
+    bottom: 1%;
+    padding: 5px;
+    background:  #003366;
+    color: white;
+    border-radius: 25px;
+    right: 20%;
+    left: 20%;
+display: flex;
+justify-content: space-evenly;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+
+
+
+img{
+width:60px;
+
+}
+
+}
