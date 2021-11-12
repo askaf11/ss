@@ -4,7 +4,7 @@ body{
     margin: 0px;
     padding: 0px;
     background: #f2f2f2;
-    font-family: Cursive;
+    font-family: verdana;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -22,6 +22,7 @@ header{
     color: white;
     padding: 10px;
     text-align: center;
+    font-family: Cursive;
 }
 #header{
     text-decoration: none;
