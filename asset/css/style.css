@@ -22,20 +22,26 @@ header{
     color: white;
     padding: 10px;
     text-align: center;
-    font-family: Cursive;
+    height: 80px;
+    
 }
 #header{
     text-decoration: none;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 50px;
     color: white;
+    font-family: Cursive;
+    
+    
+    
 }
+
 
 figure{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background: #cce6ff;
     text-align: center;
-    margin:20px;
+    margin:10px;
     padding: 10px;
     border-radius:5px;
     width: 150px;
@@ -44,10 +50,12 @@ figure{
 }
 
 .box{
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    margin: 10px;
+    display:grid; 
+    grid-template-columns:auto auto auto;
+    justify-content: space-between;
+    
+    
 }
 
 /* .infobox{
@@ -72,21 +80,28 @@ figure{
 }
 
 
-footer{
+.CU{
     display:grid; 
     grid-template-columns:50% 50%;
     padding: 5px;
-    background-color: #000000;
+    background-color:#003366;
     color: #ffffff;
     text-align: center;
+    
 }
 
-footer > a{
+.CU > a{
     margin: 10px;
     border: 1px solid #ffffff ;
     border-radius: 5px;
     padding: 5px;
     color:#ffffff;
+}
+
+footer{
+    background: #000000;
+    color:#ffffff;
+    padding: 20px;
 }
 
 /*-------------------------------------------------------------------
@@ -102,15 +117,10 @@ body{
 
 
 #header{
-    font-size: 20px;
+    font-size: 30px;
 }
 
-.box{
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+
 
 
 
