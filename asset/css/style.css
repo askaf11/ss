@@ -18,24 +18,50 @@ a{
 }
 
 header{
-    background:  #003366;
-    color: white;
+    background:  #000000;
     padding: 10px;
-    text-align: center;
-    height: 80px;
-    
-}
-#header{
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 50px;
-    color: white;
-    font-family: Cursive;
-    
-    
-    
+    height: 50%;
+    display: grid;
+    grid-template-columns: 12% 25% 63%;
 }
 
+#header1{
+    font-weight: normal;
+    font-size:17vw;
+    color: #0099ff;
+    text-align: right; 
+    margin: 0px;
+
+}
+#header2{
+    font-weight: normal;
+    font-size: 5vw;
+    color: white;
+    text-align: left;
+    margin-top: 15%; 
+    margin-bottom: 15%; 
+}
+
+#header2 > span{
+    font-size:6vw ;
+    
+}
+i{
+    color: #0099ff;
+    font-size: 8vw;
+    margin-top: 11%;
+    margin-bottom: 11%;
+   
+    animation-name: mymove;
+	animation-fill-mode: forwards;
+	animation-duration: 5s;
+	position: relative;
+    } 
+    
+    @keyframes mymove{
+        from{left: 0%; }
+        to{left: 80%; }
+    }
 
 figure{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -84,7 +110,7 @@ figure{
     display:grid; 
     grid-template-columns:50% 50%;
     padding: 5px;
-    background-color:#003366;
+    background-color:#0086b3;
     color: #ffffff;
     text-align: center;
     
@@ -109,17 +135,6 @@ footer{
 
 @media screen and (max-width: 600px)
 {/* Media Screen */
-
-body{
-    margin-right: 0px;
-    margin-left:0px ;
-}
-
-
-#header{
-    font-size: 30px;
-}
-
 
 
 
