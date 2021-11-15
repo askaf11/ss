@@ -78,7 +78,7 @@ figure{
 .box{
     margin: 10px;
     display:grid; 
-    grid-template-columns:auto auto auto;
+    grid-template-columns:auto auto auto auto;
     justify-content: space-between;
     
     
@@ -136,7 +136,12 @@ footer{
 @media screen and (max-width: 600px)
 {/* Media Screen */
 
-
+.box{
+    margin: 10px;
+    display:grid; 
+    grid-template-columns:auto auto auto;
+    justify-content: space-between;  
+}
 
 
 figure{
