@@ -10,6 +10,8 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-weight: normal;
     text-align: center;
+    font-size: 2.5vw;
+    
 }
 
 a{
@@ -44,15 +46,17 @@ header{
     text-align: left;
     margin-top: 15%; 
     margin-bottom: 15%; 
-    animation-name: myfade;
+    animation-name: move;
     animation-fill-mode: forwards;
-	animation-duration: 7s;
+	animation-duration: 3s;
+    position: relative;
 }
 
 #header2 > span{
     font-size:6vw ;
     
 }
+
 i{
     color: #0099ff;
     font-size: 8vw;
@@ -64,7 +68,10 @@ i{
 	position: relative;
     } 
     
-    
+div:nth-child(even) {
+    padding: 10px;
+    background: #cccccc;
+}   
 
 figure{
     text-align: center;
@@ -80,7 +87,7 @@ figure{
     margin: 10px;
     display:grid; 
     grid-template-columns:auto auto auto auto;
-    justify-content: space-between;
+    justify-content: center;
     
     
 }
@@ -117,17 +124,17 @@ figure{
     grid-template-columns:50% 50%;
     padding: 5px;
     background-color:#0099ff;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     
 }
 
 .CU > a{
     margin: 10px;
-    border: 1px solid #ffffff ;
+    border: 1px solid #000000 ;
     border-radius: 5px;
     padding: 5px;
-    color:#ffffff;
+    color:#000000;
 }
 
 footer{
@@ -141,6 +148,11 @@ footer{
         to{left: 80%;transform: rotate(720deg); }
 }
 
+@keyframes move{
+    from{top: -200px; }
+    to{top: 0 }
+}
+
 @keyframes myfade{
     from{opacity: 0; }
     to{opacity: 1; }
@@ -151,11 +163,16 @@ footer{
 @media screen and (max-width: 600px)
 {/* Media Screen */
 
+h1, h2, h3, h4, h5, h6{
+       
+    font-size: 5vw;
+}
+
 .box{
     margin: 10px;
     display:grid; 
     grid-template-columns:auto auto auto;
-    justify-content: space-between;  
+      justify-content: center;
 }
 
 
